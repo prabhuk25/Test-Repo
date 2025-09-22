@@ -8,8 +8,8 @@ components:
   - name: dev-container
     container:
       image: registry.access.redhat.com/ubi8/ubi
-      memoryLimit: 2Gi
-      cpuLimit: 1
+      memoryLimit: "2Gi"
+      cpuLimit: "1"
       mountSources: true
       command: ["/bin/sh"]
       args: ["-c", "while sleep 1000; do :; done"]
