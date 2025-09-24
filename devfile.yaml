@@ -1,6 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
-  name: demo-devspaces
+  name: my-demo-devspaces
   version: 1.0.0
   description: Minimal Devfile to showcase key DevSpaces features
 
