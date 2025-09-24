@@ -3,7 +3,6 @@ metadata:
   name: my-demo-workspace
   version: 1.0.0
   description: Minimal Devfile to showcase key DevSpaces features
-
 components:
   - name: dev-container
     container:
@@ -15,33 +14,4 @@ components:
       mountSources: true
       command: ["/bin/sh"]
       args: ["-c", "while sleep 1000; do :; done
-      
-# schemaVersion: 2.2.2
-# metadata:
-#   name: ds-plugin-registry-dev
-# components:
-#   - name: builder
-#     container:
-#       image: quay.io/devspaces/udi-rhel9:latest
-#       memoryRequest: 256Mi
-#       memoryLimit: 8Gi
-#       cpuRequest: 100m
-#       cpuLimit: 2000m
-#       volumeMounts:
-#         - name: local
-#           path: /home/user/.local/
-#       env:
-#         - name: CONCURRENTLY_OPTS
-#           value: -m 1
-#       endpoints:
-#         - name: openvsx
-#           exposure: internal
-#           protocol: https
-#           targetPort: 5432
-#   - volume:
-#       ephemeral: true
-#     name: local
-# commands:
-# events:
-#   postStart:
-#     - "cleanup-local-files"
+  
