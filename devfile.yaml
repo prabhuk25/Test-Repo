@@ -6,7 +6,7 @@ metadata:
 components:
   - name: dev-container
     container:
-      image: registry.access.redhat.com/ubi8/ubi
+      image: quay.io/devspaces/udi-rhel9:latest
       memoryRequest: 256Mi
       memoryLimit: 8Gi
       cpuRequest: 100m
