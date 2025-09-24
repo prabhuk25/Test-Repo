@@ -13,4 +13,4 @@ components:
       cpuLimit: 2000m
       mountSources: true
       command: ["/bin/sh"]
-      args: ["-c", "while sleep 1000; do :; done]
+      args: ["-c", "while sleep 1000; do :; done"]
