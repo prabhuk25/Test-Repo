@@ -6,12 +6,11 @@ metadata:
 components:
   - name: dev-container
     container:
-      image: quay.io/devspaces/udi-rhel9:latest
+      image: registry.access.redhat.com/ubi8/ubi
       memoryRequest: 256Mi
       memoryLimit: 8Gi
       cpuRequest: 100m
       cpuLimit: 2000m
       mountSources: true
       command: ["/bin/sh"]
-      args: ["-c", "while sleep 1000; do :; done
-  
+      args: ["-c", "while sleep 1000; do :; done]
